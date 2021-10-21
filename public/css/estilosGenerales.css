@@ -1,0 +1,15 @@
+/*************************************************************************************************************
+
+                                            PAGINA DE ESTILOS GENERALES
+    
+    Este archivo debe de estar en todas las  páginas de nuestra aplicación, asi que solo deben de estar
+    solo aquellos componnetes que se repitan a lo largo del mismo. 
+
+
+******************************************+*++**************************************************************++*/
+
+:root{
+    --colorPrimario: #042351;
+    --colorSecundario: #FFFFFF;
+    --colorFondo : #F2F0ED;
+}
