@@ -10,3 +10,7 @@ Route::get('/', function () {
 Route::get('/usuarios', function () {
     return view('admin/usuarios');
 });
+
+Route::get('/institutos', function () {
+    return view('admin/institutos');
+});

@@ -243,7 +243,7 @@ return [
         ['header' => 'GESTIÓN'],
         [
             'text' => 'Institutos',
-            'url'  => '/admin',
+            'url'  => '/admin/institutos',
             'icon' => 'fas fa-school',
         ],
         [

@@ -1,0 +1,31 @@
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: var(--colorPrimario);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.navHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+}
+
+.navarHeader{
+    display: flex;
+    gap: 2em;
+}
+
+.titeHeader{
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.navarHeader a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
