@@ -14,7 +14,7 @@
 <body>
     
     <header class='header'>
-       <div class="wrapper">
+       <div class="wrapperCustom">
             <nav class='navHeader'>
                 <div class="titeHeader">
                     <h2>Institutos históricos</h2>
@@ -30,7 +30,7 @@
     </header>
 
     <div class="bannerPrimary">
-        <div class="wrapper">
+        <div class="wrapperCustom">
             <div class="contentBanner">
                 <div class="contentBannerText">
                     <h1>Recorrido por los institutos históricos de Andalucía</h1>
