@@ -1,0 +1,18 @@
+.customTable{
+    display: flex;
+    flex-direction: column;
+}
+
+.customTHeader, .customTData{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 1em;
+}
+
+.customTHead, .customTCell{
+    width: 15%;
+}
