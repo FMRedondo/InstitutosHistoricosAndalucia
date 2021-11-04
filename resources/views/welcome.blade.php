@@ -39,6 +39,9 @@
                         <a href="/mapa" class="buttonBanner">Mapa</a>
                     </div>
                 </div>
+                <div class="backgroundImageBanner">
+                    <img src="/img/celia.png" alt="ies celia viñas">
+                </div>
             </div>
         </div>
     </div>
