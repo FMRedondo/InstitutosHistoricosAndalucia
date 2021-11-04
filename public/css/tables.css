@@ -1,6 +1,9 @@
 .customTable{
     display: flex;
     flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .customTHeader, .customTData{
@@ -11,8 +14,97 @@
     align-content: center;
     text-align: center;
     padding: 1em;
+    border: solid var(--primaryColor);
+    border-width: 0 1px 0 1px;
+}
+
+.customTHeader{
+    background-color: var(--primaryColor);
+    color: white;
+}
+
+.customTHead p{
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.customTData{
+    background-color: #D9FAFF;
+}
+
+.customTData:last-of-type{
+    border: solid var(--primaryColor);
+    border-width: 0 1px 1px 1px;
+    background-color: #ccf7fd; /*ESTE SOLO SIRVE DE PRUEBA, REALMENTE SE ASIGNARIA A LOS .customTData IMPARES*/
 }
 
 .customTHead, .customTCell{
     width: 15%;
+}
+
+.customTOptions{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.btn-label {
+	position: relative;
+	left: -12px;
+	display: inline-block;
+	padding: 6px 12px;
+	background: rgba(0, 0, 0, 0.15);
+	border-radius: 3px 0 0 3px;
+}
+
+.btn-labeled {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.customTOptions .btn{
+	padding: 6px 12px;
+}
+
+@media (max-width: 1450px) {
+    .customTData{
+        flex-wrap: wrap;
+    }
+
+    .customTHead{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .customTHead, .customTCell{
+        width: 30%;
+        height: 3em;
+    }  
+
+    .hideMobile{
+        display: none;
+    }
+
+}
+
+@media (max-width: 600px){
+    .customTHeader{
+        display: none;
+    }
+
+    .customTData:first-of-type{
+        border-width: 1px 1px 1px 1px;
+    }
+
+    .customTCell{
+        flex-direction: column;
+        width: 100%;
+        height: 2.5em;
+    } 
+
+    .customTCell:first-child > p{
+        font-weight: bolder;
+    }
 }
