@@ -1,0 +1,67 @@
+.titleCustom{
+    margin: 0.5em 0;
+    padding: 1em;
+    font-size: 3em;
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.schoolsSection{
+    width: 100%;
+    padding-bottom: 10em;
+    background-image: url("/img/blob.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+
+.schools{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.school{
+    width: 30%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.school img{
+    width: 100%;
+}
+
+.nameSchool{
+    text-align: center;
+    font-weight: bold;
+    padding: 0.5em 0;
+    font-size: 2em;
+}
+
+.locationSchool, .yearsSchool{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 0.2em 0;
+}
+
+.btnSchool{
+    display: flex;
+    justify-content: center;
+    margin: 1em auto;
+    width: 30%;
+    background-color: white;
+    border: 2px solid var(--secondaryColor);
+    border-radius: 22px;
+    padding: 0.5em;
+    text-decoration: none;
+    color: var(--secondaryColor);
+    font-weight: bolder;
+    transition:ease-out 300ms;
+}
+
+.btnSchool:hover{
+    background-color: var(--secondaryColor);
+    color: white;
+}

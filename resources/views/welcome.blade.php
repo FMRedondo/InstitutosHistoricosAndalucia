@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/estilosGenerales.css">
     <link rel="stylesheet" href="/estilos/inicio/header.css">
     <link rel="stylesheet" href="/estilos/inicio/banner.css">
+    <link rel="stylesheet" href="/estilos/inicio/school.css">
 
     <title>Intitutos Históricos</title>
 </head>
@@ -45,6 +46,43 @@
             </div>
         </div>
     </div>
+
+    <section class="schoolsSection">
+        <div class="wrapperCustom">
+            <h2 class="titleCustom">Institutos históricos Andalucía</h2>
+            <div class="schools">
+                <div class="school">
+                    <img src="/img/celia.jpg" alt="celia Viñas">
+                    <div class="contentSchool">
+                        <p class="nameSchool">Celia Viñas</p>
+                        <p class="locationSchool">Almería, Almería</p>
+                        <p class="yearsSchool">1845</p>
+                        <a href="#" class='btnSchool'>Visitar</a>
+                    </div>
+                </div>
+
+                <div class="school">
+                    <img src="/img/celia.jpg" alt="celia Viñas">
+                    <div class="contentSchool">
+                        <p class="nameSchool">Celia Viñas</p>
+                        <p class="locationSchool">Almería, Almería</p>
+                        <p class="yearsSchool">1845</p>
+                        <a href="#" class='btnSchool'>Visitar</a>
+                    </div>
+                </div>
+
+                <div class="school">
+                    <img src="/img/celia.jpg" alt="celia Viñas">
+                    <div class="contentSchool">
+                        <p class="nameSchool">Celia Viñas</p>
+                        <p class="locationSchool">Almería, Almería</p>
+                        <p class="yearsSchool">1845</p>
+                        <a href="#" class='btnSchool'>Visitar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
