@@ -8,87 +8,99 @@
 
 @section('content')
 
-<section class="customTable">
-  <div class="customTHeader">
-      <div class="customTHead">
-        <p>Instituto</p>
+<div class="crudTables d-flex flex-column">
+  <section class="searchTopBar mb-2 d-flex flex-row align-items-center">
+      <div class="input-group w-75">
+        <input type="text" class="form-control searchBar" id="inlineFormInputGroupUsername" placeholder="Introduce tu búsqueda">
+        <div class="input-group-prepend">
+          <i class="fa-solid fa-magnifying-glass input-group-text h-100 d-flex"></i>
+        </div>
       </div>
-      <div class="customTHead">
-        <p>Localidad</p>
-      </div>
-      <div class="customTHead">
-        <p>Provincia</p>
-      </div>
-      <div class="customTHead hideMobile">
-        <p>Sitio Web</p>
-      </div>
-      <div class="customTHead hideMobile">
-        <p>Recorrido</p>
-      </div>
-      <div class="customTHead hideMobile">
-        <p>Opciones</p>
-      </div>
-  </div>
 
-  <div class="customTContent">
-
-    <div class="customTData">
-      <div class="customTCell">
-          <p>Celia Viñas</p>
+      <div class="w-25 createSchool d-flex justify-content-center">
+        <button class="btn btn-success">
+          <i class="fa-solid fa-plus"></i>
+        </button>
       </div>
-      <div class="customTCell">
-          <p>Almería</p>
-      </div>
-      <div class="customTCell">
-          <p>Almería</p>
-      </div>
-      <div class="customTCell">
-        <a href="https://iescelia.org/web/" type="button" class="btn btn-labeled btn-info btnWeb">
-          <span class="btn-label"><i class="fa-solid fa-globe"></i></span> Sitio Web
-        </a>
-      </div>
-      <div class="customTCell">
-        <a href="https://iescelia.org/celia360-nuevo/public/" type="button" class="btn btn-labeled btn-info btnRecorrido">
-          <span class="btn-label"><i class="fa-solid fa-map-location-dot"></i></span> Recorrido
-        </a>
-      </div>
-      <div class="customTCell">
-          <div class="customTOptions">
-            <span class="btn btn-labeled btn-danger deleteSchool"><i class="fa-solid fa-trash-can"></i></span>
-            <span class="btn btn-labeled btn-primary editSchool"><i class="fa-solid fa-pen-to-square"></i></span>
-          </div>
-      </div>
+  </section>
+  
+  <section class="customTable customContent">
+    <div class="customTHeader">
+        <div class="customTHead">
+          <p>Instituto</p>
+        </div>
+        <div class="customTHead">
+          <p>Localidad</p>
+        </div>
+        <div class="customTHead">
+          <p>Provincia</p>
+        </div>
+        <div class="customTHead hideMobile">
+          <p>Sitio Web</p>
+        </div>
+        <div class="customTHead hideMobile">
+          <p>Recorrido</p>
+        </div>
+        <div class="customTHead hideMobile">
+          <p>Opciones</p>
+        </div>
     </div>
-    <div class="customTData">
-      <div class="customTCell">
-          <p>Celia Viñas</p>
+  
+    <div class="customTContent">
+      <div class="customTData">
+        <div class="customTCell">
+            <p>Celia Viñas</p>
+        </div>
+        <div class="customTCell tDataSecondary">
+            <p>Almería</p>
+        </div>
+        <div class="customTCell tDataSecondary">
+            <p>Almería</p>
+        </div>
+        <div class="customTCell">
+          <a href="https://iescelia.org/web/" type="button" class="btn btn-labeled btn-info btnLink">
+            <span class="btn-label"><i class="fa-solid fa-globe"></i></span> Sitio Web
+          </a>
+        </div>
+        <div class="customTCell">
+          <a href="https://iescelia.org/celia360-nuevo/public/" type="button" class="btn btn-labeled btn-info btnLink btnLink">
+            <span class="btn-label"><i class="fa-solid fa-map-location-dot"></i></span> Recorrido
+          </a>
+        </div>
+        <div class="customTCell customTOptions">
+          <span class="btn btn-labeled btn-danger deleteSchool"><i class="fa-solid fa-trash-can"></i></span>
+          <span class="btn btn-labeled btn-primary editSchool"><i class="fa-solid fa-pen-to-square"></i></span>
+        </div>
       </div>
-      <div class="customTCell">
-          <p>Almería</p>
+      <div class="customTData">
+        <div class="customTCell">
+            <p>Celia Viñas</p>
+        </div>
+        <div class="customTCell">
+            <p>Almería</p>
+        </div>
+        <div class="customTCell">
+            <p>Almería</p>
+        </div>
+        <div class="customTCell">
+          <a href="https://iescelia.org/web/" type="button" class="btn btn-labeled btn-info btnLink">
+            <span class="btn-label"><i class="fa-solid fa-globe"></i></span> Sitio Web
+          </a>
+        </div>
+        <div class="customTCell">
+          <a href="https://iescelia.org/celia360-nuevo/public/" type="button" class="btn btn-labeled btn-info btnLink">
+            <span class="btn-label"><i class="fa-solid fa-map-location-dot"></i></span> Recorrido
+          </a>
+        </div>
+        <div class="customTCell customTOptions">
+              <span class="btn btn-labeled btn-danger deleteSchool"><i class="fa-solid fa-trash-can"></i></span>
+              <span class="btn btn-labeled btn-primary editSchool"><i class="fa-solid fa-pen-to-square"></i></span>
+        </div>
       </div>
-      <div class="customTCell">
-          <p>Almería</p>
-      </div>
-      <div class="customTCell">
-        <a href="https://iescelia.org/web/" type="button" class="btn btn-labeled btn-info btnWeb">
-          <span class="btn-label"><i class="fa-solid fa-globe"></i></span> Sitio Web
-        </a>
-      </div>
-      <div class="customTCell">
-        <a href="https://iescelia.org/celia360-nuevo/public/" type="button" class="btn btn-labeled btn-info btnRecorrido">
-          <span class="btn-label"><i class="fa-solid fa-map-location-dot"></i></span> Recorrido
-        </a>
-      </div>
-      <div class="customTCell">
-          <div class="customTOptions">
-            <span class="btn btn-labeled btn-danger deleteSchool"><i class="fa-solid fa-trash-can"></i></span>
-            <span class="btn btn-labeled btn-primary editSchool"><i class="fa-solid fa-pen-to-square"></i></span>
-          </div>
-      </div>
+  
     </div>
-
-  </div>
-</section>
+  </section>
+</div>
 
 @stop
 
