@@ -1,3 +1,39 @@
+/* BARRA DE BUSQUEDA Y BOTON DE AÑADIR*/
+.searchTopBar{
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.searchBar{
+    border-radius: 4px 0 0 4px !important;
+}
+
+.input-group-text{
+    border-radius: 0 4px 4px 0 !important;
+}
+
+
+/* TABLA:
+    ->customTable
+        customTHeader
+            - customTHead
+                p
+            - customTHead
+                p
+            - customTHead
+                p
+        customTContent
+            - customTData
+                - customTCell
+                - customTCell
+                - customTCell
+                - customTCell
+                - customTCell
+                - customTCell
+            - customTData
+                - ...
+*/
 .customTable{
     display: flex;
     flex-direction: column;
@@ -39,6 +75,9 @@
 }
 
 .customTHead, .customTCell{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 15%;
 }
 
@@ -57,6 +96,14 @@
 	border-radius: 3px 0 0 3px;
 }
 
+.btnLink{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 75%;
+}
+
 .btn-labeled {
 	padding-top: 0;
 	padding-bottom: 0;
@@ -66,7 +113,18 @@
 	padding: 6px 12px;
 }
 
-@media (max-width: 1450px) {
+.searchForm{
+    width: 80%;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1700px) {
+    .btnLink{
+        width: 90%;
+    }
+}
+
+@media (max-width: 1460px) {
     .customTData{
         flex-wrap: wrap;
     }
@@ -89,7 +147,13 @@
 
 }
 
-@media (max-width: 600px){
+@media (max-width: 1025px) {
+    .btnLink{
+        width: 90%;
+    }
+}
+
+@media (max-width: 645px){
     .customTHeader{
         display: none;
     }
@@ -106,5 +170,9 @@
 
     .customTCell:first-child > p{
         font-weight: bolder;
+    }
+
+    .tDataSecondary{
+        width: 50%;
     }
 }
