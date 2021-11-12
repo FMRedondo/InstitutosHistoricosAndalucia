@@ -7,6 +7,15 @@
 @stop
 
 @section('content')
+@php
+  require_once ();
+  class Schools{
+    public function __construct(){
+        $this -> school = new schools();
+    }
+  } 
+@endphp
+
 
 <div class="crudTables d-flex flex-column">
   <section class="searchTopBar mb-2 d-flex flex-row align-items-center">
@@ -47,6 +56,7 @@
     </div>
   
     <div class="customTContent">
+
       <div class="customTData">
         <div class="customTCell">
             <p>Celia Viñas</p>
@@ -72,32 +82,7 @@
           <span class="btn btn-labeled btn-primary editSchool"><i class="fa-solid fa-pen-to-square"></i></span>
         </div>
       </div>
-      <div class="customTData">
-        <div class="customTCell">
-            <p>Celia Viñas</p>
-        </div>
-        <div class="customTCell">
-            <p>Almería</p>
-        </div>
-        <div class="customTCell">
-            <p>Almería</p>
-        </div>
-        <div class="customTCell">
-          <a href="https://iescelia.org/web/" type="button" class="btn btn-labeled btn-info btnLink">
-            <span class="btn-label"><i class="fa-solid fa-globe"></i></span> Sitio Web
-          </a>
-        </div>
-        <div class="customTCell">
-          <a href="https://iescelia.org/celia360-nuevo/public/" type="button" class="btn btn-labeled btn-info btnLink">
-            <span class="btn-label"><i class="fa-solid fa-map-location-dot"></i></span> Recorrido
-          </a>
-        </div>
-        <div class="customTCell customTOptions">
-              <span class="btn btn-labeled btn-danger deleteSchool"><i class="fa-solid fa-trash-can"></i></span>
-              <span class="btn btn-labeled btn-primary editSchool"><i class="fa-solid fa-pen-to-square"></i></span>
-        </div>
-      </div>
-  
+        
     </div>
   </section>
 </div>

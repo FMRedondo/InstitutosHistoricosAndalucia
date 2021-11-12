@@ -15,7 +15,7 @@ class Schools extends Model
     /** OBTENER LISTADO DE TODOS LOS INSTITUTOS
      * @respuesta -> Resultados de consulta
      */
-    public function getSchools(){
+    public function show(){
         $sql = "SELECT * FROM schools";
         $respuesta = DB::select($sql);
         return $respuesta;
@@ -24,7 +24,7 @@ class Schools extends Model
     /** OBTENER UN INSTITUTO
      * @id -> id del instituto
      */
-    public function getSchool($id){
+    public function find($id){
         $sql = "SELECT * FROM schools WHERE (id = $id)";
         $respuesta = DB::select($sql);
         return $respuesta;
@@ -39,7 +39,7 @@ class Schools extends Model
      * @urlWeb      -> Url de la pagina web del instituto
      * @urlTour     -> Url del tour virtual
      */
-    public function createSchool($name, $description, $image, $location, $province, $urlWeb, $urlTour){
+    public function create($name, $description, $image, $location, $province, $urlWeb, $urlTour){
         $sql = "INSERT INTO schools (name, description, image, location, province, urlWeb, urlTour) VALUES ($name, $description, $image, $location, $province, $urlWeb, $urlTour)";
         DB::insert($sql);
         $id = DB::getPdo()->lastInsertId();
@@ -49,7 +49,7 @@ class Schools extends Model
     /** ELIMINAR INSTITUTO
      * @id -> id del instituto
      */
-    public function deleteSchool($id){
+    public function destroy($id){
         $sql = "DELETE * FROM schools WHERE id=$id";
         DB::delete($sql);
     }
@@ -59,9 +59,18 @@ class Schools extends Model
      * @field   -> campo para cambiar
      * @value   -> nuevo valor
      */
-    public function updateSchool($id, $campo, $value){
+    public function edit($id, $campo, $value){
         $sql = "UPDATE schools SET $campo = '$value' WHERE id=$id";
         DB::update($sql);
+    }
+
+    /** BUSQUEDA
+     * @search  -> Busqueda que realiza el usuario
+     */
+
+     public function search($search){
+        $sql = "SELECT * FROM schools WHERE name = '$search' OR location = '$search' OR province = '$search'";
+        DB::select($sql);
     }
 
     /** OBTENER NOMBRE DE INSTITUTO POR ID
