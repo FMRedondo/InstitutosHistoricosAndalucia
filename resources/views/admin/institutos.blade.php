@@ -7,15 +7,6 @@
 @stop
 
 @section('content')
-@php
-  require_once ();
-  class Schools{
-    public function __construct(){
-        $this -> school = new schools();
-    }
-  } 
-@endphp
-
 
 <div class="crudTables d-flex flex-column">
   <section class="searchTopBar mb-2 d-flex flex-row align-items-center">
@@ -57,6 +48,7 @@
   
     <div class="customTContent">
 
+      <!--
       <div class="customTData">
         <div class="customTCell">
             <p>Celia Viñas</p>
@@ -69,7 +61,7 @@
         </div>
         <div class="customTCell">
           <a href="https://iescelia.org/web/" type="button" class="btn btn-labeled btn-info btnLink">
-            <span class="btn-label"><i class="fa-solid fa-globe"></i></span> Sitio Web
+            <span class="btn-label"><i class="fa-solid fa-globe"></i></span>
           </a>
         </div>
         <div class="customTCell">
@@ -82,7 +74,8 @@
           <span class="btn btn-labeled btn-primary editSchool"><i class="fa-solid fa-pen-to-square"></i></span>
         </div>
       </div>
-        
+    -->   
+      
     </div>
   </section>
 </div>
@@ -100,4 +93,5 @@
 @section('js')
     <script src="https://kit.fontawesome.com/75e57fedbe.js" crossorigin="anonymous"></script>
     <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/admin/school.js"></script>
 @stop
