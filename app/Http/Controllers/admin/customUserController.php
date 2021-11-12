@@ -25,6 +25,8 @@ class customUserController extends Controller
     public function show(){
         $result = customUserModel::show();
         return $result;
+
+       
     }
 
     public function edit(){
