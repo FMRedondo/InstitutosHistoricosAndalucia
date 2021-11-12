@@ -15,6 +15,10 @@
 -->
 
 
+
+
+
+
 @extends('adminlte::page')
 
 @section('title', 'Usuarios')
@@ -25,7 +29,10 @@
 
 @section('content')
 
-<h1>Página de usuarios</h1>
+
+    <div class="usersContent">
+
+    </div>
 
 
 @stop
@@ -37,4 +44,6 @@
 
 @section('js')
     <script> console.log('Hi!'); </script>
+    <script src="/js/admin/users.js"></script>
+    <script src="/js/jquery-3.6.0.min.js"></script>
 @stop

@@ -7,14 +7,7 @@
 @stop
 
 @section('content')
-@php
-  require_once ();
-  class Schools{
-    public function __construct(){
-        $this -> school = new schools();
-    }
-  } 
-@endphp
+
 
 
 <div class="crudTables d-flex flex-column">
